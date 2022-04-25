@@ -1,0 +1,11 @@
+h2{color: blue; text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: italic;}
+h3,h4{color: coral;font-size: larger;}
+div{color: crimson;}
+body{background-color: rgba(104, 87, 95, 0.454);background-image: url("1.png");margin-left: 200px;margin-top: 200px;background-repeat: repeat-y;background-size: 800px;background-position-x: center;}
+.devang{color: blueviolet; text-align: center;}
+#rastogi{font-size: x-small;text-align: right;}
+p.none{border-style: none;}
+p.dotted{border-style: dotted;}
+p.dashed{border-style: dashed;}
+img{float: left;}
+

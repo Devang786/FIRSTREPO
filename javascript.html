@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            function show()
+            {
+                //document.write('Hey i am from button');
+                //alert('Hey iam from alert');
+                //var a=10;
+                //var b=20;
+                var a= document.getElementById('txta').value;
+                var b=document.getElementById('txtb').value;
+
+                var c=a+b;
+                //document.write(c);
+                alert('Sum='+ c);
+
+            }
+            function display()
+            {
+                //alert('Hey i am from display');
+                //var a=10;
+                //var b=20;
+                //var c=a-b;
+                var a= document.getElementById('txta').value;
+                var b=document.getElementById('txtb').value;
+                var c=a-b;
+                //document.write(c);
+                alert('Difference='+ c);
+
+                //document.write(c);
+            }
+            
+            //document.writeln('Hey i am from javascript'+ '<br>');
+            //document.write('Hey i am also from javascript');
+           // document.writeln('Hey i am also from javascript');
+           // alert('Hello Mohit');
+            
+        </script>
+    </head>
+    
+    <body>
+        <!-- <button style="color: blue;" onclick="show()">Click here</button>
+        <button style="color: rebeccapurple;" onclick="display()">Click here also</button> -->
+        Enter value of a: <input type="text" id="txta"/>
+        Enter value of b: <input type="text" id="txtb"/>
+        <button style="color: blue;" onclick="show()">Add</button>
+        <button style="color: rebeccapurple;" onclick="display()">Subtract</button>
+    </body>
+</html>

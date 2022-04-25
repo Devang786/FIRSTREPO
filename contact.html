@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        function binding(){
+            //Reading data from Ui and sending  to js
+
+            var Name=document.getElementById('txtname').value;
+            var Email=document.getElementById('emailid').value;
+            var Mobile=document.getElementById('nummobile').value;
+            var Message=document.getElementById('txtmessage').value;
+
+            //Sending data to ui from JS
+            document.getElementById('divdata').innerHTML= "Hello"+ " " + Name + "!  " +  "Thank you for connecting with us." + "We will get back to you shortly.";
+            }
+
+      
+      
+    </script>    
+    </head>
+    <body>
+      <h1 align="center">CONTACT US</h1>
+        <div class="container">
+        
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="txtname" aria-describedby="emailHelp">
+              </div>                         
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailid"  aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mobile</label>
+                <input type="number" class="form-control" id="nummobile">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Message</label>
+                <input type="text" class="form-control" id="txtmessage">
+              </div>
+
+           
+              <!-- <button type="button" class="btn btn-primary" onclick="binding()">Submit</button> -->
+          </form>
+           <!-- <div id="divdata"></div> -->
+        </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="binding()">
+  Submit
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Query Submitted</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="divdata"></div>
+        <!-- Thank you for connecting with us.<br>We will get back to you shortly.<br> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thank You</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+        
+    </body>
+</html>
